@@ -12,7 +12,7 @@ var firebaseConfig = {
 
   //Read data from queue
   var db = firebase.database().ref("queue");
-  
+  var list = []
   function read(){
       db.on("value", function(snap){
           console.log(snap.val());
@@ -22,9 +22,17 @@ var firebaseConfig = {
   }
 
   db.orderByChild("onQueue").equalTo(true).on("value", function(snapshot) {
-      var queueNumber = ""
+    var queueNumber = ""
+    var templist = new Array()
+    list = templist 
     snapshot.forEach((function(child) {
-         queueNumber += child.key + " "
-         document.getElementById('queue-number').innerHTML = queueNumber
-        }))
+        //Show Queue
+        queueNumber += child.key + " "
+        //
+        templist.push(child.key)
+        document.getElementById('queue-number').innerHTML = queueNumber
+        console.log(list)
+    }))
   });
+
+  

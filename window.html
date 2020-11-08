@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main-style.css" />
+    <title>S.R.O.Q.S</title>
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            Window 1
+            <hr />
+            Current number:
+            <p id="window1-number">0</p>
+          </td>
+          <td>
+            Window 2
+            <hr />
+            Current number:
+            <p id="window2-number">0</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Window 3
+            <hr />
+            Current number:
+            <p id="window3-number">0</p>
+          </td>
+          <td>
+            Window 4
+            <hr />
+            Current number:
+            <p id="window4-number">0</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="queue">
+      <p>In-queue:</p>
+      <p id="queue-number">0</p>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+  </body>
+  <script src="javascript/control-window.js"></script>
+</html>

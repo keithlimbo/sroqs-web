@@ -1,0 +1,33 @@
+table,
+td {
+  border: 1px solid black;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+}
+
+td {
+  padding: 20px 0px 0px;
+}
+
+hr {
+  width: 100%;
+}
+
+#window1-number,
+#window2-number,
+#window3-number,
+#window4-number,
+#queue-number {
+  margin: 30px 0px 10px;
+  font-size: 70px;
+}
+
+.queue {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 35px;
+}

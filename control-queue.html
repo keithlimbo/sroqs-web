@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control</title>
+  </head>
+  <body>
+    <a href="index.html">Log out</a>
+    <table>
+      <tr>
+        <td>Window 1</td>
+        <td>Window 2</td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="button"
+            value="Next"
+            id="window1-number-add"
+            onclick=""
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Next"
+            id="window2-number-add"
+            onclick=""
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Window 3</td>
+        <td>Window 4</td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="button"
+            value="Next"
+            id="window3-number-add"
+            onclick=""
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Next"
+            id="window4-number-add"
+            onclick=""
+          />
+        </td>
+      </tr>
+    </table>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCzi_bm46rEPlZJXBxXR-VJOoZ7ijzekh4",
+        authDomain: "sroqs-a9da6.firebaseapp.com",
+        databaseURL: "https://sroqs-a9da6.firebaseio.com",
+        projectId: "sroqs-a9da6",
+        storageBucket: "sroqs-a9da6.appspot.com",
+        messagingSenderId: "983208557248",
+        appId: "1:983208557248:web:3a85ac7b7f9f91a83a0b25",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+  <script src="javascript/control-window.js"></script>
+</html>

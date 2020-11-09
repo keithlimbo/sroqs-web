@@ -13,12 +13,16 @@
         <td>Window 2</td>
       </tr>
       <tr>
+        <td><p id="window1">0</p></td>
+        <td><p id="window2">0</p></td>
+      </tr>
+      <tr>
         <td>
           <input
             type="button"
             value="Next"
             id="window1-number-add"
-            onclick=""
+            onclick="nextQueue(1)"
           />
         </td>
         <td>
@@ -26,7 +30,7 @@
             type="button"
             value="Next"
             id="window2-number-add"
-            onclick=""
+            onclick="nextQueue(2)"
           />
         </td>
       </tr>
@@ -35,12 +39,16 @@
         <td>Window 4</td>
       </tr>
       <tr>
+        <td><p id="window3">0</p></td>
+        <td><p id="window4">0</p></td>
+      </tr>
+      <tr>
         <td>
           <input
             type="button"
             value="Next"
             id="window3-number-add"
-            onclick=""
+            onclick="nextQueue(3)"
           />
         </td>
         <td>
@@ -48,7 +56,7 @@
             type="button"
             value="Next"
             id="window4-number-add"
-            onclick=""
+            onclick="nextQueue(4)"
           />
         </td>
       </tr>
@@ -59,24 +67,7 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyCzi_bm46rEPlZJXBxXR-VJOoZ7ijzekh4",
-        authDomain: "sroqs-a9da6.firebaseapp.com",
-        databaseURL: "https://sroqs-a9da6.firebaseio.com",
-        projectId: "sroqs-a9da6",
-        storageBucket: "sroqs-a9da6.appspot.com",
-        messagingSenderId: "983208557248",
-        appId: "1:983208557248:web:3a85ac7b7f9f91a83a0b25",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
   </body>
-  <script src="javascript/control-window.js"></script>
+  <script src="javascript/control-queue.js"></script>
 </html>

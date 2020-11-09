@@ -19,14 +19,6 @@ var firebaseConfig = {
       getNumberonWindow(i);
   }
 
-  function read(){
-      db.on("value", function(snap){
-          console.log(snap.val());
-      }, function (error){
-          console.log("error: " + error)
-      })
-  }
-
   //Add all queue in array
   db.orderByChild("onQueue").equalTo(true).on("value", function(snapshot) {
     var queueNumber = "";

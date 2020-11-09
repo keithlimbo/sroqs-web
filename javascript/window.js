@@ -13,6 +13,12 @@ var firebaseConfig = {
   //Read data from queue
   var db = firebase.database().ref("queue");
   var list = []
+
+  for(var i = 1; i <= 4 ; i++){
+      console.log(i);
+      getNumberonWindow(i);
+  }
+
   function read(){
       db.on("value", function(snap){
           console.log(snap.val());
@@ -21,10 +27,11 @@ var firebaseConfig = {
       })
   }
 
+  //Add all queue in array
   db.orderByChild("onQueue").equalTo(true).on("value", function(snapshot) {
-    var queueNumber = ""
-    var templist = new Array()
-    list = templist 
+    var queueNumber = "";
+    var templist = new Array();
+    list = templist ;
     snapshot.forEach((function(child) {
         //Show Queue
         queueNumber += child.key + " "
@@ -35,4 +42,15 @@ var firebaseConfig = {
     }))
   });
 
+  function getNumberonWindow(WindowNumber){
+      var windowNumberList = [];
+      db.orderByChild("windowNumber").equalTo(WindowNumber).on("value", function(snapshot){
+          var windowNumberTemplist = new Array();
+          windowNumberList = windowNumberTemplist;
+          snapshot.forEach((function(child){
+              windowNumberTemplist.push(child.key);
+              document.getElementById("window"+WindowNumber+"-number").innerHTML = windowNumberList[0];
+          }))
+      })
+  }
   

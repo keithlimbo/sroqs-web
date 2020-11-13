@@ -12,10 +12,22 @@ var firebaseConfig = {
 
   //Read data from queue
   var db = firebase.database().ref("queue");
-  var list = []
-
+  var list = [];
+  var intervalID = setInterval(function(){
+    updateWindow(1);
+    updateWindow(2);
+    updateWindow(3);
+    updateWindow(4);
+    if(list.length == 1){
+        db.child(list[0].toString()).on('value', function (snapshot){
+            const check = snapshot.child("windowNumber").val();
+            if(check == 0){
+              document.getElementById('queue-number').innerHTML = 0;
+            }
+        });
+    }
+  }, 2500);
   for(var i = 1; i <= 4 ; i++){
-      console.log(i);
       getNumberonWindow(i);
   }
 
@@ -46,3 +58,13 @@ var firebaseConfig = {
       })
   }
   
+  function updateWindow(WindowNumber){
+      const winNumber = document.getElementById("window"+WindowNumber+"-number").innerHTML;
+      db.child(winNumber.toString()).on('value', function (snapshot){
+          const hey = snapshot.child("windowNumber").val();
+          if(hey == 0){
+            document.getElementById("window"+WindowNumber+"-number").innerHTML = 0
+          }
+      });
+  }
+

@@ -13,7 +13,12 @@ var firebaseConfig = {
   //Read data from queue
   var db = firebase.database().ref("queue");
 
-
+  var intervalCheck = setInterval(function(){
+    updateWindow(1);
+    updateWindow(2);
+    updateWindow(3);
+    updateWindow(4);
+  },2500);
   //Get current number in list
   function getNumberonWindow(WindowNumber){
     var windowNumberList = [];
@@ -36,13 +41,25 @@ var firebaseConfig = {
   //Next
   function nextQueue(window){
     var getWinNumber = document.getElementById("window"+window).innerHTML;
-    alert(getWinNumber + " is done!");
-    if(getWinNumber != 0){
+    if(getWinNumber != 0){  
+      if(confirm("Are you done with "+ getWinNumber)){     
         db.child(getWinNumber.toString()).set({
             college: null,
             email: null,
             onQueue: null,
-            WindowNumber: 0
+            windowNumber: 0
         })    
+      }
     }
   }
+
+  function updateWindow(WindowNumber){
+    const winNumber = document.getElementById("window"+WindowNumber).innerHTML;
+  
+    db.child(winNumber.toString()).on('value', function (snapshot){
+        const hey = snapshot.child("windowNumber").val();
+        if(hey == 0){
+          document.getElementById("window"+WindowNumber).innerHTML = 0
+        }
+    });
+}

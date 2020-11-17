@@ -1,0 +1,18 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Testing out Node JS with Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "firebase",
+    "nodejs"
+  ],
+  "author": "Keith Richard",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^9.4.1"
+  }
+}

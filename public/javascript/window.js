@@ -12,23 +12,6 @@ var firebaseConfig = {
 
   //Read data from queue
   var db = firebase.database().ref("queue");
-
-  // Retrieve Firebase Messaging object.
-  const messaging = firebase.messaging();
-  messaging.requestPermission()
-  .then(function(){
-      console.log('Have permission');
-      return messaging.getToken();
-  })
-  .then(function(token){
-    console.log(token);
-})
-.catch(function(err){
-    console.log('Error');
-})
-//   var regToken = ["fvgzaHvEQmSqrR0BSiBoMt:APA91bFlNnpW5YXIwvtntmLpnZoY6DVlw4LON-m51UysOI7BkNpsVenGGA5lFaBJ9qiLXQoSH_GYkYGLl-pJvXyBF8P8PEDTmI77Q9Hb5iqA0SlCGaxLtnyKyJ2zCYF1I-MRnZDbm43W"]
-  
-
   var list = [];
   var intervalID = setInterval(function(){
     if(list.length == 1){

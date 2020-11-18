@@ -13,6 +13,7 @@
   "author": "Keith Richard",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^8.0.2",
     "firebase-admin": "^9.4.1"
   }
 }

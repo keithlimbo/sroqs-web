@@ -15,7 +15,7 @@ var topic = "Test";
 var message = {
     notification: {
       title: 'S.R.O.Q.S',
-      body: 'You\'re'
+      body: 'You\'re next in queue! Please proceed to the office.'
     },
     topic: topic
   };

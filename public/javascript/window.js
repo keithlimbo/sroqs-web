@@ -67,4 +67,3 @@ var firebaseConfig = {
           }
       });
   }
-

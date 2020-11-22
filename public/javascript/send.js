@@ -11,6 +11,8 @@ admin.initializeApp({
   databaseURL: "https://sroqs-a9da6.firebaseio.com"
 });
 
+var count = 0;
+
 var message = {
     notification: {
       title: 'S.R.O.Q.S',
@@ -21,11 +23,14 @@ var message = {
 var interval = setInterval(function() {
   var obj = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
   if(obj.token != ""){
+    console.clear();
     console.log(obj.token);
     admin.messaging().sendToDevice(obj.token, message)
       .then((response) => {
       // Response is a message ID string.
+      count++;
       console.log('Successfully sent message:', response);
+      console.log("Number of Successfully sent messages: "+ count);
       })
       .catch((error) => {
       console.log('Error sending message:', error);

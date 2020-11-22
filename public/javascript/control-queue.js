@@ -51,6 +51,9 @@ var firebaseConfig = {
         })    
       }
     }
+    else{
+      alert("Nobody is in the queue");
+    }
   }
 
   function updateWindow(WindowNumber){

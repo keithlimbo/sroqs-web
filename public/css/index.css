@@ -6,10 +6,11 @@
 body {
   margin: 0;
   font-family: "Nunito";
+  background-color: #f2ebe7;
 }
 
 header {
-  background-color: rgba(240, 0, 0, 0.7);
+  background-color: rgba(247, 79, 79, 0.9);
 }
 
 header::after {
@@ -48,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #e2942e;
+  color: #f2ebe7;
 }
 
 .main {
@@ -59,6 +60,7 @@ nav a:hover {
 .main p {
   /* line-height: 450px; */
   text-align: center;
+  letter-spacing: 8px;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -66,6 +68,15 @@ nav a:hover {
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.main a {
+  text-decoration: none;
+  color: #f00000;
+}
+
+.main a:active {
+  color: #000000;
 }
 
 #title {
@@ -79,4 +90,9 @@ nav a:hover {
   margin: 0;
   font-size: 18px;
   font-style: italic;
+}
+
+#acronym {
+  font-size: 20px;
+  /* font-style: italic; */
 }

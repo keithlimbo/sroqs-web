@@ -67,3 +67,9 @@ var firebaseConfig = {
           }
       });
   }
+
+  function logout(){
+    if(confirm("Do you want to log out?")){     
+      window.location.replace('index.html');
+    }
+  }

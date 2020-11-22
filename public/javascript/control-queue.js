@@ -65,4 +65,10 @@ var firebaseConfig = {
           document.getElementById("window"+WindowNumber).innerHTML = 0
         }
     });
-}
+  }
+
+  function logout(){
+    if(confirm("Do you want to exit?")){     
+      window.location.replace('index.html');
+    }
+  }

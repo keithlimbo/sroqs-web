@@ -3,6 +3,11 @@
   src: url("./nunito-sans/nunitoreg.ttf");
 }
 
+body {
+  font-family: "Nunito";
+  background-color: #f2ebe7;
+}
+
 a {
   text-decoration: none;
   margin: 18px 20px;
@@ -12,11 +17,6 @@ a {
 
 a:active {
   color: #f00000;
-}
-
-body {
-  font-family: "Nunito";
-  background-color: #f2ebe7;
 }
 
 table {
@@ -50,4 +50,6 @@ input[type="button"] {
   background-color: #f74f4f;
   font-size: 16px;
   font-family: "Nunito";
+  outline: none;
+  cursor: pointer;
 }

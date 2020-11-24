@@ -96,3 +96,65 @@ nav a:hover {
   font-size: 20px;
   /* font-style: italic; */
 }
+
+/* Contact us page */
+
+.contactus-container {
+}
+
+.contactus-container hr {
+  width: 87%;
+  margin-top: 0px;
+}
+
+.contactus-container p {
+  font-size: 38px;
+  color: #0f111a;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 24px;
+}
+
+.contactus-form {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  font-family: "Nunito";
+  font-size: 16px;
+}
+
+input[type="text"] {
+  height: 32px;
+  padding-left: 10px;
+}
+
+select {
+  height: 38px;
+  width: 103%;
+  padding-left: 10px;
+}
+
+input[type="submit"] {
+  width: 88px;
+  height: 35px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background-color: #f74f4f;
+  font-size: 16px;
+  font-family: "Nunito";
+  outline: none;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 10px;
+}

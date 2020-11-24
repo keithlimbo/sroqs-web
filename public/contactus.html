@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./assets/iconLogoCircle.png" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="./assets/logoFlat.png" alt="logoFlat" id="logo-header"
+            /></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Admin</a></li>
+          <li><a href="window.html">Queue</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contactus-container">
+      <p>Contact Us</p>
+      <hr />
+      <div class="contactus-form">
+        <form action="#">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="What's your Email?"
+          /><br />
+          <select name="about" id="about" aria-placeholder="Haha">
+            <option value="" disabled selected>What's this about?</option>
+            <option value="1">Account & Security</option>
+            <option value="2">Application Concerns</option>
+            <option value="3">Others</option></select
+          ><br />
+          <textarea
+            name="listenarea"
+            id="linstenarea"
+            cols="40"
+            rows="10"
+            style="resize: none"
+            placeholder="Come on, give us some details..."
+          ></textarea
+          ><br />
+          <input
+            type="submit"
+            value="Submit"
+            onclick="alert('Ticket sent to the support team')"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

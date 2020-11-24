@@ -116,27 +116,28 @@ nav a:hover {
 }
 
 .contactus-form {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 35%;
+  margin-right: 40%;
 }
 
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  /* width: 193px; */
   margin-top: 10px;
   font-family: "Nunito";
   font-size: 16px;
 }
 
 input[type="text"] {
+  width: 484px;
   height: 32px;
   padding-left: 10px;
 }
 
 select {
   height: 38px;
-  width: 103%;
+  width: 500px;
   padding-left: 10px;
 }
 
@@ -156,5 +157,6 @@ input[type="submit"] {
 }
 
 textarea {
+  width: 479px;
   padding: 10px;
 }

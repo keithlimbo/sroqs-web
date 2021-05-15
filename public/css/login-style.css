@@ -9,16 +9,12 @@ body {
 }
 
 .container {
-  width: 420px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: -81.5px; /*height of div*/
-  margin-left: -210px; /*width of div*/
-  /* background-color: rgb(236, 226, 229); */
-  /* border: 1px solid black; */
-  /* border-radius: 12px; */
+  margin: auto;
+  width: 32%;
+  /* border: 5px solid #ffff00; */
+  padding: 10px;
   font-weight: 700;
+  text-align: center;
 }
 
 .container img {
@@ -27,7 +23,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 10%;
   margin-bottom: 10px;
 }
 
@@ -50,12 +46,13 @@ input[type="text"],
 input[type="password"] {
   width: 300px;
   padding: 8px 10px;
-  margin: 0;
+  margin-top: 12px;
   border: 1px solid #353535;
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 16px;
   font-family: "Nunito";
+  /* text-align: center; */
 }
 
 input[type="submit"] {

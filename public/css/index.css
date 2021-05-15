@@ -6,11 +6,14 @@
 body {
   margin: 0;
   font-family: "Nunito";
-  background-color: #f2ebe7;
+  background-image: url("2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header {
-  background-color: rgba(247, 79, 79, 0.9);
+  background-color: rgba(247, 79, 79, 1);
 }
 
 header::after {
@@ -31,14 +34,20 @@ nav ul {
 
 nav ul li {
   font-size: 21px;
-  margin: 30px 0px 5px 45px;
-  line-height: 40px;
+  margin: 30px 0px 0px 45px;
+  /* line-height: 40px; */
   display: inline-block;
+  /* border: 2px solid black; */
+  border-radius: 3px;
 }
 
 #logo-header {
-  width: 50px;
+  max-width: 70px;
   /* margin-left: 0px; */
+}
+
+.ulHeader {
+  height: 100%;
 }
 
 nav a {
@@ -48,8 +57,49 @@ nav a {
   padding-right: 15px;
 }
 
-nav a:hover {
-  color: #f2ebe7;
+.header-img {
+  border-style: none;
+}
+
+.header {
+  /* padding: 0px; */
+  /* padding-bottom: 10px; */
+  /* transition-duration: 0.4s; */
+  text-decoration: none;
+  /* overflow: hidden; */
+}
+
+.header a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.header a:hover {
+  color: #4a0f16;
+}
+
+.header a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #4a0f16;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .main {
@@ -71,8 +121,8 @@ nav a:hover {
 }
 
 .main a {
-  text-decoration: none;
-  color: #f00000;
+  /* text-decoration: none; */
+  color: #bb3019;
 }
 
 .main a:active {
@@ -81,43 +131,39 @@ nav a:hover {
 
 #title {
   font-size: 180px;
-  margin-top: 250px;
   margin-bottom: 0px;
   padding: 0;
+  text-shadow: 2px 3px #ff0000;
 }
 
 #get-app {
-  margin: 0;
-  font-size: 18px;
-  font-style: italic;
+  /* margin: 0; */
+  font-size: 20px;
+  font-style: bold;
+  letter-spacing: 2px;
 }
 
 #acronym {
-  font-size: 20px;
+  font-size: 24px;
   /* font-style: italic; */
 }
 
 /* Contact us page */
 
 .contactus-container {
+  text-align: center;
 }
-
 .contactus-container hr {
   width: 87%;
   margin-top: 0px;
 }
 
 .contactus-container p {
-  font-size: 38px;
+  font-size: 48px;
   color: #0f111a;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 24px;
-}
-
-.contactus-form {
-  margin-left: 35%;
-  margin-right: 40%;
 }
 
 input[type="text"],

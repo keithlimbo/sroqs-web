@@ -7,38 +7,49 @@ body {
   font-family: "Nunito";
   background-color: #f2ebe7;
 }
-
+.logout {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 a {
   text-decoration: none;
-  margin: 18px 20px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 30px;
   color: black;
+  transition: 00.4s;
+  border: 2px solid black;
+  border-radius: 3px;
 }
 
-a:active {
-  color: #f00000;
+a:hover {
+  background-color: rgba(247, 79, 79, 0.9);
 }
 
 table {
-  border-collapse: separate;
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  margin-top: -381px;
-  margin-left: -244px;
+  text-align: center;
   border-spacing: 40px;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td {
   font-size: 38px;
   text-align: center;
+  padding: 0 200px;
+  /* margin-left: 200px; */
+}
+
+td p {
+  border: 2px solid black;
 }
 
 #window1,
 #window2,
 #window3,
 #window4 {
-  font-size: 44px;
+  margin: 30px 0px 10px 0px;
+  font-size: 70px;
 }
 
 input[type="button"] {
